@@ -24,13 +24,13 @@
 </head>
 <body>
 
-<div id="outerWrap">
+<div class="outerWrap">
 
 	<header>
 		<h1>handyCAPSSlider</h1>
 	</header>
 
-	<div id="animSwitch">Switch animation</div>
+	<div class="animSwitch">Switch animation</div>
 
 	<!-- Container can be any block level element with the default or custom class applied -->
 	<div class="slider-container">
@@ -113,7 +113,7 @@
 	var types = ['normal','flip','spin','twirl'],
 	i = 0;
 	// Hit the switch to see the animation types
-	document.querySelector('#animSwitch').addEventListener('click', function() {
+	document.querySelector('.animSwitch').addEventListener('click', function() {
 		if ( i >= types.length - 1) {
 			i = 0;
 			handyCAPSSlider.animType = types[0];
